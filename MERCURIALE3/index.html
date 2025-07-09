@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outil de Commande</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Outil de Commande Multi-Mercuriales</h1>
+
+        <div class="controls">
+            <div class="source-selector">
+                <span>Choisir la mercuriale :</span>
+                <label>
+                    <input type="radio" name="source" value="folkestone" checked> Folkestone
+                </label>
+                <label>
+                    <input type="radio" name="source" value="vendome"> Vendôme
+                </label>
+                <label>
+                    <input type="radio" name="source" value="washington"> Washington
+                </label>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Rechercher par code ou libellé produit...">
+            </div>
+        </div>
+
+        <h2>Résultats de la recherche</h2>
+        <div id="searchResults" class="table-wrapper">
+            <!-- Le placeholder ou le tableau de résultats apparaîtra ici -->
+        </div>
+
+        <h2>Ma commande</h2>
+        <div id="orderList" class="table-wrapper">
+            <p class="placeholder">Aucun article ajouté pour le moment.</p>
+        </div>
+        
+        <div class="actions">
+             <button id="downloadCsvBtn" disabled>Télécharger la commande (CSV)</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
